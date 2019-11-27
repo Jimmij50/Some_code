@@ -1,0 +1,1 @@
+# Some small Demo Code in my spare time or when doing homework  
