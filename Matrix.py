@@ -135,18 +135,8 @@ def skew_s(a):
     #         [a[2,0],swn(0,""),negetive_swn(a[0,0])],
     #         [negetive_swn(a[1,0]),a[0,0],swn(0,"")]     
     #   ])
-    l1=[]
-    l2=[]
-    for i in range(3):
-        for j in range(3):
-            if j==i:
-                l1.append(swn(1,""))
-            else:
-                l1.append(swn(0,""))
-        l2.append(copy.deepcopy(l1)) 
-        l1.clear()
-    temp=np.array(l2)
-    anss=cmul(ans,temp)
+    i_m=gen_i(ans.shape[0])
+    anss=cmul(ans,i_m)
     return anss #需要称一下单位矩阵 才能正确输出 
 def gen_i(n):
     l1=[]
