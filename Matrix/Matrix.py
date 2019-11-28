@@ -137,7 +137,7 @@ def skew_s(a):
     #   ])
     i_m=gen_i(ans.shape[0])
     anss=cmul(ans,i_m)
-    return anss #需要称一下单位矩阵 才能正确输出 
+    return ans #需要称一下单位矩阵 才能正确输出 
 def gen_i(n):
     l1=[]
     l2=[]
